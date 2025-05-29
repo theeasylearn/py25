@@ -15,3 +15,5 @@ print(t1[-2]) # return second last element of tuple
 print(t1) 
 print(t1[-5:]) # return from last 5th element to last element
 print(t1[:5])  # return first five element
+#del t1[2] # get error because single element is not possible
+print(t1)

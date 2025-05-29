@@ -16,3 +16,6 @@ print(name[4:]) # end index take default length of string-1
 print(name)
 print(name*3) # return three time string
 print(name+" "+name1) #concatenate name and name1 with space
+
+del name
+# print(name) # get error not define
