@@ -1,0 +1,13 @@
+num1 =input("Enter your number1") 
+num2 =input("Enter your number2")
+num1 = int(num1)
+num2 = int(num2)
+print(num1);print(num2)
+
+print("addition is = ",num1+num2)
+print("sub is =",num1-num2)
+print("mul is = ",num1*num2)
+print("div is =",num1/num2)
+print("modulo is =", num1%num2)
+print("expo is = ",num1**num2)
+print("floor div is =",num1//num2)
