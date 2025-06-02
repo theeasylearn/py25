@@ -16,12 +16,17 @@ print(book)
 
 b1 = book.copy()  # create copy of dictionary 
 b1
-del b1['topic'] # delete value where key is topic
-print(b1)
+
 print(book.items()) # print all items
 print(book.keys()) # return keys as list
 
 print(book.values()) # return values as list
 print(book)
+print(book.pop('weight',12.3))
+print(book)
+print(book.popitem())
+print(book)
 book.clear() # delete all element from dictionary
 print(book) # return empty dictionary
+del b1['topic'] # delete value where key is topic
+print(b1)
