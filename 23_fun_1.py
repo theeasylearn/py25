@@ -1,20 +1,51 @@
+# default function
 s ="asdsfm fdgdkms"
-len(s) # default function
-# user define function
-def square(number): # with perameater 
-    s = number * number
-    # return s  # with return statement
-    print("Square is =",s)
+len(s) 
 
+# user define function
+# with parameter with return
+def square(number): # with parameter 
+    s = number * number
+    return s  # with return statement
+# calling function
 number = int(input("Enter your Number"))
 ans = square(number)
-# print("Square is =",ans)
+print("Square is =",ans)
 
-def nsquare(x=2, y = 2): #here x is required and y is optional
-    return (x*x + 2*x*y + y*y)
-result = nsquare(3)  # 3*3 +2*3*2 +2*2
-print("result is = ",result)
-print("result is =",nsquare(2,3))
-print("result is =",nsquare())  #nsquare() missing 1 required positional argument: 'x'
-print("result is =",nsquare(y=2,x=3))
+# without return without parameter
+def greet(): # without parameter
+    print("Hello, how are you?") # without return statement
+    
+greet() # calling function
 
+# without parameter with return 
+import datetime
+
+def get_current_datetime():
+    return datetime.datetime.now()
+
+# Calling the function
+current_time = get_current_datetime()
+print("Current Date and Time:", current_time)
+
+# with parameter without return
+day =int(input("Enter the day number"))
+
+def daycount(day):
+    if day == 1:
+        print("Monday")
+    elif day == 2:
+        print("Tuesday")
+    elif day == 3:
+        print("Wednesday")
+    elif day == 4:
+        print("Thursday")
+    elif day == 5:
+        print("Friday")
+    elif day == 6:
+        print("Saturday")
+    elif day == 7:
+        print("Sunday")
+    else:
+        print("Invalid day number")
+daycount(day)
