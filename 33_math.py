@@ -1,0 +1,16 @@
+import math
+n=float(input("Enter the number "))
+
+print("ceil = ",math.ceil(n))
+print("floor = ",math.floor(n))
+print("copysign = ", math.copysign(n,-1.5))
+print("fabs = ",math.fabs(n))
+print("factorial = ",math.factorial(int(n)))
+print("fmod = ",math.fmod(n,2))
+x=int(n)
+print("isfinite =",math.isfinite(x))
+print("isnan = ",math.isnan(x))
+print("is inf = ",math.isinf(x))
+print("idexp = ",math.ldexp(x,2))
+# print("",math)
+# print("",math)
