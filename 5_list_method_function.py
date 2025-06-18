@@ -1,5 +1,6 @@
 l1 =['the',123,12.3,'easy',True]
 l2 =[123,'easylearn']
+
 print(l1);print(l2)
 l1.append('python') # add element on end
 print(l1)
@@ -23,7 +24,7 @@ print(l1)
 l2.clear()
 print(l2)
 # index()  # Returns the index of the first matched item
-print(l1.index(123))
+print(l1.index(12.3))
 print(l1)   
 # count(item)  #Returns the count of the number of items passed as an argument 
 print(l1.count('the'))
@@ -45,5 +46,5 @@ del l5[2] # delete element which  index is passed
 # print(l1) # delete complete list if index is not passed
 print(l5)
 print(l1)
-# del l2
+del l2
 # print(l2)  # get error because l2 list is delete
