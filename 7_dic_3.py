@@ -15,12 +15,13 @@ book['topic'] = 'python library' # replace value with key
 print(book)
 
 b1 = book.copy()  # create copy of dictionary 
-b1
+print("copy",b1)
 
-print(book.items()) # print all items
-print(book.keys()) # return keys as list
+print("items",book.items()) # print all items
+print("keys",book.keys()) # return keys as list
 
-print(book.values()) # return values as list
+print("values",book.values()) # return values as list
+
 print(book)
 print(book.pop('weight',12.3))
 print(book)

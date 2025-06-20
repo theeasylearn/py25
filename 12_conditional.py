@@ -8,7 +8,7 @@ print("and operator",(a==b and c==d))
 # print("and operator",(a==b & c==d))
 
 #or op
-print("and operator",(a==b or c==d))
+print("or operator",(a==b or c==d))
 # print("and operator",(a==b | c==d))
 
 # not op

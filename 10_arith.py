@@ -1,5 +1,5 @@
-num1 =input("Enter your number1") 
-num2 =input("Enter your number2")
+num1 =input("Enter your number1 ") 
+num2 =input("Enter your number2 ")
 num1 = int(num1)
 num2 = int(num2)
 print(num1);print(num2)
