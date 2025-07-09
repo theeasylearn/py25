@@ -1,0 +1,12 @@
+data base
+data store
+
+table - row,col
+row - record 
+col - field,artibutes
+
+table structure - scyma
+db - table1,table2,...
+
+mysql,oracle
+
