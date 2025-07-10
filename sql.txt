@@ -10,3 +10,44 @@ db - table1,table2,...
 
 mysql,oracle
 
+wamp,mysql(phpmyadmin)
+
+sql(structured query language)
+
+1) create a table
+create table employee(
+    id int auto_increment primary key,
+    name varchar(50),
+    salary int
+)
+
+2) drop table employee
+
+3) rename table oldname to newname
+
+
+insert
+------------------------------------
+1) insert into table values(...)
+    insert into student values("","devarsh",17,"dev@gmail.com,1234567890)
+
+2) insert into table(fields) values(...)
+    INSERT INTO student(name,age,email,mobile) VALUES("harsh",17,"h123@gamil.com",0987654321)
+
+
+update
+----------------------------------------
+update table set field = new value,....  where condition
+UPDATE employees SET reportsTo=2000 WHERE officeCode=6
+UPDATE products SET buyPrice = buyPrice + (buyPrice*0.10) WHERE quantityInStock<=6000
+
+delete
+---------------------------------------------
+delete from table where condition
+delete from payments where paymentdate>='2005-01-01' and paymentdate<='2005-12-31'
+
+delete from payments where paymentdate between('2005-01-01' and '2005-12-31')
+
+DELETE FROM offices WHERE country='INDIA' AND state='AC'    
+
+select
