@@ -48,6 +48,61 @@ delete from payments where paymentdate>='2005-01-01' and paymentdate<='2005-12-3
 
 delete from payments where paymentdate between('2005-01-01' and '2005-12-31')
 
-DELETE FROM offices WHERE country='INDIA' AND state='AC'    
+DELETE FROM offices WHERE country='INDIA' AND state='AC'   
+
+
+agreegate function
+return a single value
+
+sum   SELECT SUM(amount) "total" FROM payments
+min   SELECT MIN(amount) "min" FROM payments
+max   SELECT max(amount) "min" FROM payments
+count SELECT COUNT(*) FROM employees
+avg   SELECT avg(amount) FROM payment
+
+SELECT SUM(amount) FROM payments WHERE customerNumber=124
 
 select
+select field | * from table_name where condition (group by) (having) condition (order by ) (limit start,row) 
+
+1) select * from tablename
+
+2) selct name,age from tablename
+
+3) year 2003 - first month and payment is >10000
+    select paymentDate,amount AS funds from payments where paymentDate>='2003-01-01' and paymentDate<='2003-01-31' and amount>10000;
+
+order by 
+assending
+    SELECT amount FROM payments ORDER BY amount 
+
+dessending
+    SELECT amount FROM payments ORDER BY amount DESC
+
+find maximum amout from payments table
+    SELECT * FROM payments ORDER BY amount DESC LIMIT 0,3
+
+    SELECT firstName FROM employees ORDER BY firstName
+
+group by
+    SELECT customerNumber,COUNT(*) FROM payments GROUP BY customerNumber
+    SELECT customerNumber,COUNT(*) FROM payments GROUP BY customerNumber HAVING COUNT(*)>2
+
+
+product management
+1) seller(admin) view
+-add product
+-remove product
+-update product details
+-fetch product
+
+-view customer
+
+2) customer view
+-view product
+-buy product
+-payment
+-bill
+
+
+table - products,customers,payments
