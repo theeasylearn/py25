@@ -106,3 +106,24 @@ product management
 
 
 table - products,customers,payments
+
+products
+id
+name
+price
+quntity
+details
+
+
+customer
+id
+name
+mobile
+address
+email
+
+payments
+id
+customer id
+amount
+date time
